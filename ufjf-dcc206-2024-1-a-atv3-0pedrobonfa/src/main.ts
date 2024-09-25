@@ -41,4 +41,18 @@ async function fetchPokemonDetails() {
   
 }
 
-fetchPokemonDetails();
+
+function randomPokemon()
+{
+  let pokemon = [];
+  for(let i=0;i<10;i++)
+  {
+    pokemon[i] = fetchPokemonDetails();
+  }
+  for(let i=0;i<10;i++)
+  {
+    console.log(pokemon[i]);
+  }
+}
+
+randomPokemon();
